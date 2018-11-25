@@ -1,0 +1,15 @@
+<div routerLink="item" [queryParams]="{page:99}" *ngFor = "let item of data" class="card" (click)="myfunction(item)">
+
+  <img class="thumbnail" [src]="item.urlToImage" alt="asdsadasad">
+  
+  <section class="card-content">
+    <h2 class="card-title">{{item.title}}</h2>
+    
+    <section class="card-description">
+      {{item.description}}
+    </section>
+  </section>
+
+  
+
+</div>
