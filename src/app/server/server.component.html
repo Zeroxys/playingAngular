@@ -1,4 +1,11 @@
-<div routerLink="item" [queryParams]="{page:99}" *ngFor = "let item of data" class="card" (click)="myfunction(item)">
+<div 
+  routerLink="item" 
+  [queryParams]="{ url : item.title, item: item }"
+  [@openClose]=" isOpen ? 'open' : 'closed' " 
+  *ngFor = "let item of data; index as i" class="card" 
+  (click)="myfunction(e,item)">
+
+  <p>{{i}}</p>
 
   <img class="thumbnail" [src]="item.urlToImage" alt="asdsadasad">
   
@@ -10,6 +17,6 @@
     </section>
   </section>
 
-  
-
 </div>
+
+

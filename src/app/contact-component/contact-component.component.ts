@@ -8,13 +8,10 @@ import {ActivatedRoute} from '@angular/router'
   styleUrls: ['./contact-component.component.styl']
 })
 export class ContactComponentComponent implements OnInit {
-
   
   params : any[];
 
-  constructor(private route: ActivatedRoute,) { }
-
-
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.queryParams.subscribe( params => {
