@@ -11,7 +11,6 @@ export class ItemComponentComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
-
   data: any;
   url:any;
 

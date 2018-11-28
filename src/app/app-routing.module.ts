@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {ItemComponentComponent} from './item-component/item-component.component'
 import {ContactComponentComponent} from './contact-component/contact-component.component'
 import {AboutMeComponent} from './about-me/about-me.component'
+import {ServersComponent} from './servers/servers.component'
 import {NotFoundComponent} from './not-found/not-found.component'
 
 const routes : Routes = [
@@ -24,11 +25,17 @@ const routes : Routes = [
     data : {title : 'pasando datos de la ruta'}
   },
 
-  /*{ 
+  {
+    path : 'cards-list', 
+    component : ServersComponent,
+    data : {title : 'pasando datos de la ruta'}
+  },
+
+  { 
     path : '',
-    redirectTo : '/',
+    redirectTo : '/cards-list',
     pathMatch : 'full'
-  },*/
+  },
 
   { 
     path : '**',
